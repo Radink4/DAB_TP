@@ -1,10 +1,14 @@
 #include <iostream>
-#include "dab.h"
+//#include "Admin.h"
+#include "Client.h"
+#include "Compte.h"
+
+using namespace std;
 
 int main()
 {
 	int select;
-	int qtRet; qtDep;
+	int qtRet, qtDep;
 
 	cout << "start" << endl;
 
@@ -17,28 +21,37 @@ int main()
 	cout << "Retirer carte 4" << endl;
 	cout << "Fmenu" << endl;
 
+	cin << select;
+
 	switch(select)
+	{
 		case 1:
-			cout << "Solde actuel de" << cl1.nom() << cl1.prenom()<< ":"  << co1.solde() << endl;
-			break;
+			cout << "Solde actuel de" << cl1.nom() << cl1.prenom() << ":"  << co1.solde() << endl;
+		break;
 
 		case 2:
 			cout << "Indiquer montant :";
 			cin << qtRet;
 
 			co1.debiter(qtRet);
-			break;
+		break;
 
 		case 3:
 			cout << "Indiquer montant :";
 			cin << qtDep;
 			co1.crediter(qtDep);
-			break;
+		break;
 
 		case 4:
 			//quit
 			exit
-			break;
+		break;
+
+		default:
+			cout << "Indiquer montant :";
+		break;
+
+	}
 
 	
 	return 0;
