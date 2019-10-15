@@ -12,6 +12,10 @@ Compte::Compte(int solde, int numCompte) : m_solde(solde), m_numCompte(numCompte
 {
 
 }
+Compte::~Compte()
+{
+
+}
 // Accesseurs et mutateurs
 int Compte::consulterSolde()
 {
