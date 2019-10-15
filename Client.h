@@ -1,5 +1,6 @@
 #ifndef DEF_CLIENT
 #define DEF_CLIENT
+#include "Compte.h"
 
 #include <iostream>
 #include <string>
@@ -15,8 +16,8 @@ public:
 protected:
 	Compte *compteClient;
 	int m_CIN;
-	std::string m_nom
-	std::string m_prenom
+	std::string m_nom;
+	std::string m_prenom;
 	int m_tel;	
 };
 

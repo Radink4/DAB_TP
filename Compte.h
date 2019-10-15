@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-class Compte : 
+class Compte 
 {
 public:
 	Compte();
@@ -12,7 +12,7 @@ public:
 	Compte(int solde, int num);
 	void debiter(int retrait);
 	void crediter(int depot);
-	void consulterSolde();
+	int consulterSolde();
 
 private:
 	int m_solde;
